@@ -1,0 +1,14 @@
+version: "3"
+services:
+  mongodb-example:
+    image: mongo:latest
+    container_name: "mongodb-example"
+    ports:
+      - 27017:27017
+  application-example:
+    image: application-example:1.0
+    container_name: "application-example"
+    ports:
+      - 8085:8085
+    links:
+      - mongodb-example
