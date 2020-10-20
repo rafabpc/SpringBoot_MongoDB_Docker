@@ -2,21 +2,27 @@
 How to Run
 
 1 - Build the APP
+
 ```mvn clean compile install```
 
 2 - Dockerize MongoDB
+
 ```docker pull mongo:latest```
 
 3 - Build the APP docker image
+
 ```docker build -f Dockerfile -t application-example:1.0 .```
 
 4 - Run the docker-compose.yml
+
 ```docker-compose up```
 
 5 - Executing the application
+
 ```@see Postman Collection (SpringBootMongoDBDockerCollection.postman_collection.json)```
 
 6 - Opening the MongoDB in MongoDBCompass
+
 ```mongodb://<your-ip-address>:27017/mongodb-example```
 
 
